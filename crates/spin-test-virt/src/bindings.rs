@@ -15820,6 +15820,9 @@ pub mod exports {
                             ResponseHandler::Response(e) => {
                                 f.debug_tuple("ResponseHandler::Response").field(e).finish()
                             }
+                            ResponseHandler::ResponseFunc(e) => {
+                                f.debug_tuple("ResponseHandler::ResponseFunc").field(e).finish()
+                            }
                         }
                     }
                 }
