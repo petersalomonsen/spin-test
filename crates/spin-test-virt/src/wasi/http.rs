@@ -544,6 +544,16 @@ impl exports::outgoing_handler::Guest for Component {
                     })),
                 ))
             }
+            Some(http_handler::ResponseHandler::ResponseFunc(func)) => {
+                let r: OutgoingResponse = func(request);
+                Ok(exports::types::FutureIncomingResponse::new(
+                    FutureIncomingResponse::new(Ok(IncomingResponse {
+                        status: r.status_code.get(),
+                        headers: r.headers,
+                        body: r.body.unconsume().map(Into::into),
+                    })),
+                ))
+            }
             Some(http_handler::ResponseHandler::Echo) => {
                 Ok(exports::types::FutureIncomingResponse::new(
                     FutureIncomingResponse::new(Ok(IncomingResponse {

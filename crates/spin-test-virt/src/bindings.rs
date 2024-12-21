@@ -15809,6 +15809,7 @@ pub mod exports {
                 pub enum ResponseHandler {
                     Echo,
                     Response(OutgoingResponse),
+                    ResponseFunc(Box<dyn Fn(OutgoingRequest) -> OutgoingResponse>)
                 }
                 impl ::core::fmt::Debug for ResponseHandler {
                     fn fmt(&self, f: &mut ::core::fmt::Formatter<'_>) -> ::core::fmt::Result {
