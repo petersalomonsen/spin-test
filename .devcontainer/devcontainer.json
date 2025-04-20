@@ -1,0 +1,23 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/rust:1": {
+            "targets": [
+                "wasm32-unknown-unknown",
+                "wasm32-wasip1"
+            ],
+        }
+    },
+    "hostRequirements": {
+        "memory": "8gb"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dtsvet.vscode-wasm",
+                "rust-lang.rust-analyzer",
+                "github.vscode-github-actions"
+            ]
+        }
+    }
+}

@@ -1,3 +1,4 @@
 /target
 test-*.tar.gz
 test.json
+wasi-sdk*
