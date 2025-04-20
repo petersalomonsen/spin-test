@@ -5,8 +5,9 @@
             "targets": [
                 "wasm32-unknown-unknown",
                 "wasm32-wasip1"
-            ],
-        }
+            ]
+        },
+        "ghcr.io/devcontainers-community/features/llvm:3": {}
     },
     "hostRequirements": {
         "memory": "8gb"
