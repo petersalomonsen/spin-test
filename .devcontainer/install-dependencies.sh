@@ -2,6 +2,8 @@
 
 sudo apt update
 sudo apt install -y pkg-config
+sudo apt install libzstd-dev
+sudo apt install libsqlite3-dev
 
 cargo install cargo-component
 
@@ -25,5 +27,4 @@ fi
 curl -LO https://github.com/WebAssembly/wasi-sdk/releases/download/wasi-sdk-25/${WASI_SDK_RELEASE}.tar.gz
 tar xf ${WASI_SDK_RELEASE}.tar.gz
 echo "export WASI_SDK_PATH=`pwd`/${WASI_SDK_RELEASE}" >> $HOME/.bashrc
-#echo export CC=\"\${WASI_SDK_PATH}/bin/clang --sysroot=\${WASI_SDK_PATH}/share/wasi-sysroot\" >> $HOME/.bashrc
 echo "export WIT_REQUIRE_F32_F64=0" >> $HOME/.bashrc
