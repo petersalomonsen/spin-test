@@ -10,7 +10,7 @@ futures = "0.3"
 ipnet = "2.9"
 spin-expressions = { workspace = true }
 spin-manifest = { workspace = true }
-spin-outbound-networking = { workspace = true }
+spin-factor-outbound-networking = { workspace = true }
 spin-serde = { workspace = true }
 spin-locked-app = { git = "https://github.com/fermyon/spin" }
 toml = { workspace = true }

@@ -18,7 +18,7 @@ spin-componentize = { git = "https://github.com/fermyon/spin" }
 spin-http = { git = "https://github.com/fermyon/spin", default-features = false }
 spin-manifest = { workspace = true }
 temp-dir = "0.1.13"
-tokio = "1.0"
+tokio = "1.44.2"
 toml = { workspace = true }
 wac-graph = "0.3"
 wasmtime = "31.0"
@@ -38,7 +38,7 @@ members = [
 anyhow = "1.0"
 spin-expressions = { git = "https://github.com/fermyon/spin" }
 spin-manifest = { git = "https://github.com/fermyon/spin" }
-spin-outbound-networking = { git = "https://github.com/fermyon/spin" }
+spin-factor-outbound-networking = { git = "https://github.com/fermyon/spin" }
 spin-serde = { git = "https://github.com/fermyon/spin" }
 toml = { version = "0.8", features = ["preserve_order"] }
 wit-bindgen-rt = { version = "0.41.0", features = ["bitflags"] }
